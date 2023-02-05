@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Entities;
+using Contracts;
+using Repository;
 
 namespace EnterpriseDotNet6.API.Extensions
 {
@@ -28,6 +30,11 @@ namespace EnterpriseDotNet6.API.Extensions
         {
             var connectionString = config["SQLServerConnection:connectionString"];
             services.AddDbContext<RepositoryContext>(o => o.UseSqlServer(connectionString));
+        }
+
+        public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+        {
+            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
         }
     }
 }

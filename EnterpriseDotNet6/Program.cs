@@ -17,14 +17,15 @@ try
     // Create Builder
     var builder = WebApplication.CreateBuilder(args);
 
+    // Configure Serilog from the configuration settings
     builder.Host.UseSerilog((ctx, lc) => lc
         .ReadFrom.Configuration(ctx.Configuration));
 
     // Add services to the container.
-
     builder.Services.ConfigureCors();
     builder.Services.ConfigureIISIntegration();
     builder.Services.ConfigureSQLServerContext(builder.Configuration);
+    builder.Services.ConfigureRepositoryWrapper();
 
     builder.Services.AddControllers();
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
