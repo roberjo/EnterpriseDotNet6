@@ -24,6 +24,7 @@ try
 
     builder.Services.ConfigureCors();
     builder.Services.ConfigureIISIntegration();
+    builder.Services.ConfigureSQLServerContext(builder.Configuration);
 
     builder.Services.AddControllers();
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

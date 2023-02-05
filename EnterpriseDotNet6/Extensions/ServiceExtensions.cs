@@ -1,4 +1,7 @@
-﻿namespace EnterpriseDotNet6.API.Extensions
+﻿using Microsoft.EntityFrameworkCore;
+using Entities;
+
+namespace EnterpriseDotNet6.API.Extensions
 {
     public static class ServiceExtensions
     {
@@ -19,6 +22,12 @@
             {
 
             });
+        }
+
+        public static void ConfigureSQLServerContext(this IServiceCollection services, IConfiguration config)
+        {
+            var connectionString = config["SQLServerConnection:connectionString"];
+            services.AddDbContext<RepositoryContext>(o => o.UseSqlServer(connectionString));
         }
     }
 }
