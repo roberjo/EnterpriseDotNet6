@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Serilog;
 using Serilog.Formatting.Json;
 
+
 // Initialize Serilog Settings
 Log.Logger = new LoggerConfiguration()
     .WriteTo.Console(new JsonFormatter())
@@ -21,13 +22,18 @@ try
     builder.Host.UseSerilog((ctx, lc) => lc
         .ReadFrom.Configuration(ctx.Configuration));
 
+    // Add Serilog
+    builder.Logging.ClearProviders();
+    builder.Logging.AddSerilog(Log.Logger);
+
     // Add services to the container.
     builder.Services.ConfigureCors();
     builder.Services.ConfigureIISIntegration();
     builder.Services.ConfigureSQLServerContext(builder.Configuration);
     builder.Services.ConfigureRepositoryWrapper();
+    builder.Services.AddAutoMapper(typeof(Program));
 
-    builder.Services.AddControllers();
+    builder.Services.AddControllers().AddNewtonsoftJson();
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
