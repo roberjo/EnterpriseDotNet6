@@ -5,13 +5,13 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnterpriseDotNet6.API", "EnterpriseDotNet6\EnterpriseDotNet6.API.csproj", "{A1E9E68E-16F5-4784-913F-CCC406C508B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{A1092DCF-6B50-4663-AD19-01848BAC1CF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseDotNet6.Contracts", "Contracts\EnterpriseDotNet6.Contracts.csproj", "{A1092DCF-6B50-4663-AD19-01848BAC1CF1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{EB85D6C2-E56D-46B2-9F3C-263A65905971}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseDotNet6.Entities", "Entities\EnterpriseDotNet6.Entities.csproj", "{EB85D6C2-E56D-46B2-9F3C-263A65905971}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{F2096ACF-9B17-4566-A207-1648EB74885E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseDotNet6.Repository", "Repository\EnterpriseDotNet6.Repository.csproj", "{F2096ACF-9B17-4566-A207-1648EB74885E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{448459E5-C19F-4162-A581-A046DC581E7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseDotNet6.Tests", "Tests\EnterpriseDotNet6.Tests.csproj", "{448459E5-C19F-4162-A581-A046DC581E7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

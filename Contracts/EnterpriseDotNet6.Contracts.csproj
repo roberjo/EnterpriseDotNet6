@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Entities\Entities.csproj" />
+    <ProjectReference Include="..\Entities\EnterpriseDotNet6.Entities.csproj" />
   </ItemGroup>
 
 </Project>

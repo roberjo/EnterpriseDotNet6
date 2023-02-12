@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Repository\Repository.csproj" />
+    <ProjectReference Include="..\Repository\EnterpriseDotNet6.Repository.csproj" />
   </ItemGroup>
 
 </Project>
