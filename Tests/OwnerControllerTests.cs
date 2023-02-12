@@ -8,6 +8,7 @@ using EnterpriseDotNet6.API;
 using EnterpriseDotNet6.API.Controllers;
 using Microsoft.Extensions.Logging;
 using Moq;
+using System.Text.Json;
 
 namespace Tests
 {
