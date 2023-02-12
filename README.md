@@ -1,4 +1,4 @@
-# EnterpriseDotNet6
+# EnterpriseDotNet6 - asp.net 6.0 Web Api Template
 This repository contains the source code for EnterpriseDotNet6, a .NET framework for building enterprise-level applications.
 
 # Features
