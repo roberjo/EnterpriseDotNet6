@@ -2,7 +2,7 @@ using EnterpriseDotNet6.API.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
 using Serilog;
 using Serilog.Formatting.Json;
-
+using AspNetCoreRateLimit;
 
 // Initialize Serilog Settings
 Log.Logger = new LoggerConfiguration()
@@ -17,6 +17,9 @@ try
 
     // Create Builder
     var builder = WebApplication.CreateBuilder(args);
+
+    // Remove Server header from response headers
+    builder.WebHost.UseKestrel(option => option.AddServerHeader = false);
 
     // Configure Serilog from the configuration settings
     builder.Host.UseSerilog((ctx, lc) => lc
@@ -41,6 +44,15 @@ try
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
+    //IP Address Rate Limiting Configurations
+    builder.Services.AddMemoryCache();
+    builder.Services.Configure<IpRateLimitOptions>(builder.Configuration.GetSection("IpRateLimiting"));
+    builder.Services.AddSingleton<IIpPolicyStore, MemoryCacheIpPolicyStore>();
+    builder.Services.AddSingleton<IRateLimitCounterStore, MemoryCacheRateLimitCounterStore>();
+    builder.Services.AddSingleton<IRateLimitConfiguration, RateLimitConfiguration>();
+    builder.Services.AddSingleton<IProcessingStrategy, AsyncKeyLockProcessingStrategy>();
+    builder.Services.AddInMemoryRateLimiting();
+
     var app = builder.Build();
 
     app.Use((context, next) => {
@@ -51,7 +63,7 @@ try
             context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
             context.Response.Headers.Add("Referrer-Policy", "no-referrer");
             context.Response.Headers.Add("X-Permitted-Cross-Domain-Policies", "none");
-            context.Response.Headers.Add("Content-Security-Policy", "default-src 'self'");
+            context.Response.Headers.Add("Content-Security-Policy", "default-src 'self';img-src data: https:;object-src 'none'; script-src https://stackpath.bootstrapcdn.com/ 'self' 'unsafe-inline';style-src https://stackpath.bootstrapcdn.com/ 'self' 'unsafe-inline'; upgrade-insecure-requests;");
             return Task.CompletedTask;
         });
         return next(context);
