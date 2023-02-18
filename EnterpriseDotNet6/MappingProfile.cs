@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using Entities.DataTransferObjects;
-using Entities.Models;
+using EnterpriseDotNet6.Entities.DataTransferObjects;
+using EnterpriseDotNet6.Entities.Models;
 
 namespace EnterpriseDotNet6.API
 {

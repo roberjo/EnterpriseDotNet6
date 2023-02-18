@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Entities.Models;
+using EnterpriseDotNet6.Entities.Models;
 
-namespace Contracts
+namespace EnterpriseDotNet6.Contracts
 {
     public interface IAccountRepository : IRepositoryBase<Account>
     {

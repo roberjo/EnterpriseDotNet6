@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Entities.DataTransferObjects
+namespace EnterpriseDotNet6.Entities.DataTransferObjects
 {
     public class AccountDto
     {

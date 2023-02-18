@@ -1,6 +1,6 @@
 ﻿using Moq;
-using Contracts;
-using Entities;
+using EnterpriseDotNet6.Contracts;
+using EnterpriseDotNet6.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Tests.Mocks

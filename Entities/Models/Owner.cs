@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Security.Principal;
 
-namespace Entities.Models
+namespace EnterpriseDotNet6.Entities.Models
 {
     [Table("owner")]
     public class Owner

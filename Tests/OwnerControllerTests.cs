@@ -1,7 +1,7 @@
-using Contracts;
+using EnterpriseDotNet6.Contracts;
 using Tests.Mocks;
 using AutoMapper;
-using Entities.DataTransferObjects;
+using EnterpriseDotNet6.Entities.DataTransferObjects;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using EnterpriseDotNet6.API;
@@ -11,7 +11,7 @@ using Moq;
 using System.Text.Json;
 using System.Net;
 
-namespace Tests
+namespace EnterpriseDotNet6.Tests
 {
     public class OwnerControllerTests
     {

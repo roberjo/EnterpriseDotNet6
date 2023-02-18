@@ -33,12 +33,29 @@ try
     builder.Services.ConfigureRepositoryWrapper();
     builder.Services.AddAutoMapper(typeof(Program));
 
+    // Add Controllers with NewtonsoftJson
     builder.Services.AddControllers().AddNewtonsoftJson();
+
+    // Add Swagger
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
 
     var app = builder.Build();
+
+    app.Use((context, next) => {
+        context.Response.OnStarting(() =>
+        {
+            context.Response.Headers.Add("X-Frame-Options", "DENY");
+            context.Response.Headers.Add("X-Xss-Protection", "1; mode=block");
+            context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
+            context.Response.Headers.Add("Referrer-Policy", "no-referrer");
+            context.Response.Headers.Add("X-Permitted-Cross-Domain-Policies", "none");
+            context.Response.Headers.Add("Content-Security-Policy", "default-src 'self'");
+            return Task.CompletedTask;
+        });
+        return next(context);
+    });
 
     app.UseSerilogRequestLogging();
 
@@ -67,11 +84,8 @@ try
     });
 
     app.UseCors("CorsPolicy");
-
     app.UseAuthorization();
-    
     app.MapControllers();
-
     app.Run();
 }
 catch (Exception ex)

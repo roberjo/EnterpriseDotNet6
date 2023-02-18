@@ -1,4 +1,4 @@
-﻿using Contracts;
+﻿using EnterpriseDotNet6.Contracts;
 using EnterpriseDotNet6.API.Controllers;
 using Microsoft.Extensions.Logging;
 using Moq;

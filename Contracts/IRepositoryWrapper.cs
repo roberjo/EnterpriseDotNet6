@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Contracts
+namespace EnterpriseDotNet6.Contracts
 {
     public interface IRepositoryWrapper
     {

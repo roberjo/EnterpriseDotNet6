@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Entities.DataTransferObjects
+namespace EnterpriseDotNet6.Entities.DataTransferObjects
 {
     public class OwnerForCreationDto
     {

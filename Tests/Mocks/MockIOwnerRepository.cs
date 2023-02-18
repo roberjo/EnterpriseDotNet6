@@ -1,5 +1,5 @@
-﻿using Contracts;
-using Entities.Models;
+﻿using EnterpriseDotNet6.Contracts;
+using EnterpriseDotNet6.Entities.Models;
 using Moq;
 using System;
 using System.Collections.Generic;

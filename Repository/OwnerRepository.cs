@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Contracts;
-using Entities;
-using Entities.Models;
+using EnterpriseDotNet6.Contracts;
+using EnterpriseDotNet6.Entities;
+using EnterpriseDotNet6.Entities.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Repository
+namespace EnterpriseDotNet6.Repository
 {
     public class OwnerRepository : RepositoryBase<Owner>, IOwnerRepository
     {

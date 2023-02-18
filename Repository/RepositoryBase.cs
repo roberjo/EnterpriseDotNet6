@@ -1,9 +1,9 @@
-﻿using Contracts;
-using Entities;
+﻿using EnterpriseDotNet6.Contracts;
+using EnterpriseDotNet6.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Repository
+namespace EnterpriseDotNet6.Repository
 {
     public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {

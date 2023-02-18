@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Entities;
-using Contracts;
-using Repository;
+using EnterpriseDotNet6.Entities;
+using EnterpriseDotNet6.Contracts;
+using EnterpriseDotNet6.Repository;
 
 namespace EnterpriseDotNet6.API.Extensions
 {

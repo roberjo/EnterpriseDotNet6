@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using Azure;
-using Contracts;
-using Entities.DataTransferObjects;
-using Entities.Models;
+using EnterpriseDotNet6.Contracts;
+using EnterpriseDotNet6.Entities.DataTransferObjects;
+using EnterpriseDotNet6.Entities.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
 

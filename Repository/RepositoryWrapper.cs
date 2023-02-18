@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Contracts;
-using Entities;
+using EnterpriseDotNet6.Contracts;
+using EnterpriseDotNet6.Entities;
 
-namespace Repository
+namespace EnterpriseDotNet6.Repository
 {
     public class RepositoryWrapper : IRepositoryWrapper
     {
@@ -23,6 +23,7 @@ namespace Repository
                 }
                 return _owner;
             }
+            set { _owner = value; }
         }
         public IAccountRepository Account
         {
