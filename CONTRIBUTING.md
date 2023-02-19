@@ -8,8 +8,8 @@ Thank you for your interest in contributing to this project! The following guide
 - [Suggesting Enhancements](https://github.com/roberjo/EnterpriseDotNet6/enhancements)
 - [Pull Requests](https://github.com/roberjo/EnterpriseDotNet6/enhancements)
 - [Styleguides](https://github.com/roberjo/EnterpriseDotNet6/enhancements)
-- [License](https://github.com/roberjo/EnterpriseDotNet6/enhancements)
-- [Code of Conduct](https://github.com/roberjo/EnterpriseDotNet6/enhancements)
+- [License](https://github.com/roberjo/EnterpriseDotNet6/LICENSE.txt)
+- [Code of Conduct](https://github.com/roberjo/EnterpriseDotNet6/blob/master/CODE_OF_CONDUCT.md)
 
 This project follows the [Contributor Covenant](https://www.contributor-covenant.org/version/2/0/code_of_conduct/) code of conduct. 
 By participating in this project, you are expected to uphold this code.
