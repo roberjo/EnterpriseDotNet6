@@ -64,4 +64,4 @@ This will run the container on port 8080. You can access the API by navigating t
 This API is designed to be an Enterprise-ready API that includes best practices and common patterns. With its use of Dependency Injection, Serilog Logging, Repository Factory Pattern, Unit Tests, IP Address based Rate Limiting, Dockerization, Security Headers, and Swagger Endpoint Documentation, it provides a robust and reliable solution for building modern, scalable APIs.
 
 ## License
-EnterpriseDotNet6 is released under the MIT License. See the [LICENSE](https://github.com/roberjo/EnterpriseDotNet6/LICENSE) file for more information.
+EnterpriseDotNet6 is released under the MIT License. See the [LICENSE](https://github.com/roberjo/EnterpriseDotNet6/LICENSE.txt) file for more information.
