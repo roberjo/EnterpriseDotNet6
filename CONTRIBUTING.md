@@ -2,14 +2,13 @@
 Thank you for your interest in contributing to this project! The following guidelines should help you get started:
 
 ## Table of Contents
-- [Code of Conduct](https://github.com/roberjo/EnterpriseDotNet6/code-of-conduct)
-- [How Can I Contribute?](https://github.com/roberjo/EnterpriseDotNet6/how-can-i-contribute)
-- [Reporting Bugs](https://github.com/roberjo/EnterpriseDotNet6/reporting-bugs)
-- [Suggesting Enhancements](https://github.com/roberjo/EnterpriseDotNet6/enhancements)
-- [Pull Requests](https://github.com/roberjo/EnterpriseDotNet6/enhancements)
-- [Styleguides](https://github.com/roberjo/EnterpriseDotNet6/enhancements)
-- [License](https://github.com/roberjo/EnterpriseDotNet6/LICENSE.txt)
-- [Code of Conduct](https://github.com/roberjo/EnterpriseDotNet6/blob/master/CODE_OF_CONDUCT.md)
+- [How Can I Contribute?](#how-can-i-contribute)
+- [Reporting Bugs](#reporting-bugs)
+- [Suggesting Enhancements](#suggesting-enhancements)
+- [Pull Requests](#pull-requests)
+- [Styleguides](#styleguides)
+- [License](#license)
+- [Code of Conduct](#code-of-conduct)
 
 This project follows the [Contributor Covenant](https://www.contributor-covenant.org/version/2/0/code_of_conduct/) code of conduct. 
 By participating in this project, you are expected to uphold this code.
@@ -27,7 +26,7 @@ Some examples include:
 
 If you're unsure how you can contribute, please open an issue and ask!
 
-### Reporting Bugs
+## Reporting Bugs
 To report a bug, please open a new issue and include as much detail as possible. 
 This should include:
 
@@ -63,4 +62,7 @@ Please follow these styleguides:
 - Commit messages should follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification.
 
 ## License
-By contributing to this project, you agree that your contributions will be licensed under the project's [MIT License]([https://chat.openai.com](https://github.com/roberjo/EnterpriseDotNet6/LICENSE).
+By contributing to this project, you agree that your contributions will be licensed under the project's [MIT License](https://github.com/roberjo/EnterpriseDotNet6/LICENSE.txt).
+
+## Code of Conduct
+Code of Conduct can be found [here](https://github.com/roberjo/EnterpriseDotNet6/blob/master/CODE_OF_CONDUCT.md)
